@@ -18,7 +18,7 @@ public class Crawler {
 		if (depth > MAX_DEPTH || visitedUrls.contains(url)) {
             return;
         }
-		 visitedUrls.add(url);
+		visitedUrls.add(url);
 		try {
 			Document doc = Jsoup.connect(url).get();
 
